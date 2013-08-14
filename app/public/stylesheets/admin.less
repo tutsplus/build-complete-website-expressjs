@@ -1,0 +1,50 @@
+.admin {
+	font-size: 16px;
+	.container {
+		padding: 20px;
+		max-width: 900px;
+	}
+	hr {
+		margin: 10px 0 10px 0;
+		border-top: none;
+		border-bottom: dotted 1px #999;
+	}
+	.list-picture {
+		max-width: 70px;
+	}
+	.list-column {
+		width: 60%;
+		table {
+			width: 94%;
+			td {
+				border-bottom: solid 1px #999;
+				border-right: dotted 1px #999;
+				padding: 4px;
+			}
+		}
+		a {
+			color: #000;
+			&:hover {
+				color: #999;
+			}
+		}
+	}
+	.form-column {
+		width: 40%;
+		input[type="text"] {
+			width: 100%;
+		}
+		textarea {
+			width: 100%;
+			height: 250px;
+		}
+	}
+	input[type="text"], select, textarea {
+		border: solid 2px #999;
+		background: none;
+		padding: 4px 6px;
+		border-radius: 4px;
+		box-sizing:border-box;
+		-moz-box-sizing:border-box;
+	}
+}

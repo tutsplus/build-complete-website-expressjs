@@ -1,0 +1,74 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	font-size: 14px;
+	font-family: Arial;
+}
+.container {
+	max-width: 1150px;
+	margin: 0 auto;
+    box-shadow: 0 2px 30px #000;
+}
+.content {
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+}
+.clear {
+    clear: both;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+nav {
+	position: relative;
+	width: 100%;
+	height: 109px;
+	background: url(/images/nav-bg.jpg) no-repeat;
+	.logo {
+		position: absolute;
+		left: 0;
+		top: 31px;
+	}
+    .menu {
+        margin: 38px 0 0 0;
+        padding: 0;
+        list-style-type: none;
+        float: right;
+        li {
+            margin: 0;
+            padding: 0;
+            float: left;
+            a {
+                color: #0b4c6e;
+                font-weight: bold;
+                font-size: 18px;
+                text-decoration: none;
+                display: block;
+                margin: 0 0 0 20px;
+                &:hover {
+                    color: lighten(#0b4c6e, 20%);
+                }
+            }
+        }
+    }
+}
+.footer {
+    clear: both;
+    .content {
+        margin: 20px auto 20px auto;
+        padding: 10px 0 20px 0;
+        color: #999;
+        text-align: center;
+        border-top: solid 2px #7f7f7f;
+    }
+}
+
+@import "home.less";
+@import "inner.less";
+@import "admin.less";

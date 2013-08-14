@@ -1,0 +1,21 @@
+<form action="/admin" method="post" enctype="multipart/form-data">
+	<input type="hidden" name="formsubmitted" value="yes">
+	<input type="hidden" name="currentPicture" value="{{picture}}">
+	<input type="hidden" name="ID" value="{{ID}}">
+	Title:<br />
+	<input type="text" name="title" value="{{title}}" /><br />
+	Text:<br />
+	<textarea name="text">{{text}}</textarea><br />
+	Picture:<br />
+	<input type="file" name="picture" /><br />{{{pictureTag}}}<br />
+	Type:<br />
+	<select name="type">
+		{{{type}}
+		<option value="blog">blog</option>
+		<option value="home">home</option>
+		<option value="services">services</option>
+		<option value="careers">careers</option>
+		<option value="contacts">contacts</option>
+	</select><br /><br />
+	<input type="submit" value="submit" />
+</form>

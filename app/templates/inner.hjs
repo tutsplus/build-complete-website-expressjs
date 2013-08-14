@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{ title }}</title>
+		<link rel='stylesheet' href='/stylesheets/style.css' />
+	</head>
+	<body>
+		<div class="container">
+            
+            <!-- navigation -->
+			<nav>
+				<div class="content">
+					<a href="/" class="logo">
+						<img src="/images/logo.png" alt="FastDelivery">
+					</a>
+                    <ul class="menu">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/careers">Careers</a></li>
+                        <li><a href="/contacts">Contacts</a></li>
+                    </ul>
+                    <br class="clear" />
+				</div>
+			</nav>
+            
+            <!-- inner page -->
+            <div class="inner">
+                <div class="content">
+                    <section>
+                        <img src="{{picture}}" alt="" />
+                        <h1>{{title}}</h1>
+                        <p>{{text}}</p>
+                    </section>
+                </div>
+            </div>
+            
+            <!-- footer -->
+            <div class="footer">
+                <div class="content">
+                    fast delivery &copy; 2013
+                </div>
+            </div>
+            
+		</div>
+	</body>
+</html>

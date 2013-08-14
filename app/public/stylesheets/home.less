@@ -1,0 +1,68 @@
+.home {
+    h1 {
+        margin: 0;
+        padding: 0;
+        text-indent: -999px;
+        overflow: hidden;
+        background: url(/images/home-title.jpg) no-repeat top center;
+        height: 437px;
+    }    
+    .teaser {
+        background: url(/images/home-teaser-bg.jpg) no-repeat top center;
+        height: 411px;
+        h2 {
+            margin: 0;
+            padding: 20px 0 0 0;
+            font-size: 40px;
+            font-weight: bold;
+            width: 580px;
+        }
+        p {
+            width: 580px;
+            font-size: 16px;
+            line-height: 28px;
+            font-weight: bold;
+            margin: 10px 0 0 0;
+        }
+        .home-teaser-image {
+            float: right;
+            margin: 30px 0 0 0;
+        }
+        .home-teaser-icons {
+            margin: 10px 0 0 0;
+            a {
+                display: block;
+                float: left;
+                margin: 0 25px 0 0;
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+    .blog-articles {
+        margin: 30px 0 0 0;
+        .item {
+            width: 202px;
+            float: left;
+            margin: 0 50px 0 0;
+            img {
+                max-width: 201px; 
+                display: block;
+            }
+            a {
+                display: block;
+                margin: 10px 0 0 0;
+                color: #0b4c6e;
+                font-size: 20px;
+                text-decoration: none;
+                &:hover {
+                    color: lighten(#0b4c6e, 20%);
+                }
+            }
+        }
+        .item:last-child {
+            margin: 0;
+        }
+    }
+}

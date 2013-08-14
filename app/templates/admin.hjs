@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{title}}</title>
+		<link rel='stylesheet' href='/stylesheets/style.css' />
+	</head>
+	<body class="admin">
+		<div class="container">
+			<h1>{{content}}</h1>
+			<hr />
+			<div class="left list-column">
+				{{{list}}}
+			</div>
+			<div class="left form-column">
+				{{{form}}}
+			</div>
+			<br class="clear" />
+			<hr />
+		</div>
+	</body>
+</html>
