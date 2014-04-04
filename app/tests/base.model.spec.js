@@ -16,5 +16,19 @@ describe("Models", function() {
 		expect(model2.db).toBeDefined();
 		expect(model2.myCustomModelMethod).toBeDefined();
 		next();
-	})
+	});
+	it("should not modify the base prototype chain", function(next) {
+		var model = new Model(dbMockup);
+		var A = model.extend({
+			prop: 20
+		});
+		var B = model.extend({
+			prop: 30
+		});
+		var a = new A();
+		var b = new B();
+		expect(a.prop).toBe(20);
+		expect(b.prop).toBe(30);
+		next();
+	});
 });
