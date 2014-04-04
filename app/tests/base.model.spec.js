@@ -14,6 +14,7 @@ describe("Models", function() {
 		});
 		var model2 = new OtherTypeOfModel(dbMockup);
 		expect(model2.db).toBeDefined();
+		expect(model2.setDB).toBeDefined();
 		expect(model2.myCustomModelMethod).toBeDefined();
 		next();
 	});

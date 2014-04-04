@@ -1,3 +1,4 @@
+var util = require('util');
 module.exports = function(response, template) {
 	this.response = response;
 	this.template = template;
@@ -8,7 +9,7 @@ module.exports.prototype = {
 			this.response = response;
 			this.template = template;
 		};
-		Child.prototype = new module.exports();
+		util.inherits(Child, module.exports);
 		for(var key in properties) {
 			Child.prototype[key] = properties[key];
 		}
