@@ -1,10 +1,13 @@
+var util = require('util');
 module.exports = function(db) {
 	this.db = db;
 };
 module.exports.prototype = {
 	extend: function(properties) {
-		var Child = module.exports;
-		Child.prototype = module.exports.prototype;
+		var Child = function(db) {
+			this.db = db;
+		};
+		util.inherits(Child, module.exports);
 		for(var key in properties) {
 			Child.prototype[key] = properties[key];
 		}

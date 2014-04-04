@@ -25,4 +25,18 @@ describe("Base view", function() {
 		expect(otherViewInstance.render).toBeDefined();
 		otherViewInstance.render({prop: 'yes'});
 	});
+	it("should not modify the base prototype chain", function(next) {
+		var v = new View();
+		var A = v.extend({
+			prop: 20
+		});
+		var B = v.extend({
+			prop: 30
+		});
+		var a = new A();
+		var b = new B();
+		expect(a.prop).toBe(20);
+		expect(b.prop).toBe(30);
+		next();
+	});
 });
