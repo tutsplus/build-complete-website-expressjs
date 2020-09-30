@@ -12,6 +12,7 @@ var express = require('express'),
 	Admin = require('./controllers/Admin'),
 	Home = require('./controllers/Home'),
 	Blog = require('./controllers/Blog'),
+        Menu = reruire(' ./controllers/Menu'),
 	Page = require('./controllers/Page');
 
 // all environments
