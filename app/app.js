@@ -3,7 +3,7 @@
  * Module dependencies.
  */
 
-var express = require('express'),
+const express = require('express'),
 	http = require('http'), 
 	path = require('path'),
 	config = require('./config')(),
@@ -15,7 +15,7 @@ var express = require('express'),
 	Page = require('./controllers/Page');
 
 // all environments
-// app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/templates');
 app.set('view engine', 'hjs');
 app.use(express.favicon());
